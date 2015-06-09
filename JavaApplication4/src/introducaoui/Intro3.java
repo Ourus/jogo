@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package introducaoui;
 
 import java.awt.Color;
 import static java.awt.Color.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
@@ -18,17 +19,19 @@ import javax.swing.Timer;
  * @author alunom
  */
 public class Intro3 extends javax.swing.JFrame {
-    int numero,numero2;
+
+    int numero, numero2;
     Timer temporizador;
     int velocidade = 500;
     int chances = 5;
-    
+    Icon icone = new ImageIcon("peixe-escolhe3.png");
+
     int painelClicado = 0;
-    
+
     public Intro3() {
         initComponents();
         temporizador = new Timer(velocidade, acaoJoao);
-        lbchances.setText("Chances: "+chances);
+        lbchances.setText("Chances: " + chances);
     }
 
     /**
@@ -583,349 +586,555 @@ public class Intro3 extends javax.swing.JFrame {
 
     private void nivel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivel1ActionPerformed
         velocidade = 500;
-     
-        
+
+
     }//GEN-LAST:event_nivel1ActionPerformed
 
     private void nivel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivel2ActionPerformed
         velocidade = 250;
-        
+
     }//GEN-LAST:event_nivel2ActionPerformed
 
     private void nivel3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivel3ActionPerformed
         velocidade = 100;
-        
+
     }//GEN-LAST:event_nivel3ActionPerformed
 
     private void nivel4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivel4ActionPerformed
         velocidade = 1;
-       
+
     }//GEN-LAST:event_nivel4ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        if(temporizador.isRunning())
-        {
+        if (temporizador.isRunning()) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             btparar.setEnabled(false);
-        }else
-        {
-        temporizador.start();
-        btcomecar.setEnabled(false);
-        btparar.setEnabled(true);
+        } else {
+            temporizador.start();
+            btcomecar.setEnabled(false);
+            btparar.setEnabled(true);
         }
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void painel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel1MouseClicked
-        if(numero == 1)
-        {
+        if (numero == 1) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb1.setText("X");
-                chances--;
-            }
+        } else {
+            lb1.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel1MouseClicked
 
     private void painel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel2MouseClicked
-       if(numero == 2)
-        {
+        if (numero == 2) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb2.setText("X");
-                chances--;
-            }
+        } else {
+            lb2.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel2MouseClicked
 
     private void painel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel3MouseClicked
-        if(numero == 3)
-        {
+        if (numero == 3) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb3.setText("X");
-                chances--;
-            }
+        } else {
+            lb3.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel3MouseClicked
 
     private void painel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel4MouseClicked
-      if(numero == 4)
-        {
+        if (numero == 4) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb4.setText("X");
-                chances--;
-            }
+        } else {
+            lb4.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel4MouseClicked
 
     private void painel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel5MouseClicked
-        if(numero == 5)
-        {
+        if (numero == 5) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb5.setText("X");
-                chances--;
-            }
+        } else {
+            lb5.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel5MouseClicked
 
     private void painel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel6MouseClicked
-        if(numero == 6)
-        {
+        if (numero == 6) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb6.setText("X");
-                chances--;
-            }
+        } else {
+            lb6.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel6MouseClicked
 
     private void painel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel7MouseClicked
-       if(numero == 7)
-        {
+        if (numero == 7) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb7.setText("X");
-                chances--;
-            }
+        } else {
+            lb7.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel7MouseClicked
 
     private void painel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel8MouseClicked
-        if(numero == 8)
-        {
+        if (numero == 8) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb8.setText("X");
-                chances--;
-            }
+        } else {
+            lb8.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel8MouseClicked
 
     private void painel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel9MouseClicked
-        if(numero == 9)
-        {
+        if (numero == 9) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb9.setText("X");
-                chances--;
-            }
+        } else {
+            lb9.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel9MouseClicked
 
     private void painel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel10MouseClicked
-        if(numero == 10)
-        {
+        if (numero == 10) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb10.setText("X");
-                chances--;
-            }
+        } else {
+            lb10.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel10MouseClicked
 
     private void painel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel11MouseClicked
-        if(numero == 11)
-        {
+        if (numero == 11) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb11.setText("X");
-                chances--;
-            }
+        } else {
+            lb11.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel11MouseClicked
 
     private void painel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel12MouseClicked
-        if(numero == 12)
-        {
+        if (numero == 12) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb12.setText("X");
-                chances--;
-            }
+        } else {
+            lb12.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel12MouseClicked
 
     private void painel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel13MouseClicked
-        if(numero == 13)
-        {
+        if (numero == 13) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb13.setText("X");
-                chances--;
-            }
+        } else {
+            lb13.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel13MouseClicked
 
     private void painel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel14MouseClicked
-        if(numero == 14)
-        {
+        if (numero == 14) {
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
             temporizador.stop();
             btcomecar.setEnabled(true);
-        }else
-            {
-                lb14.setText("X");
-                chances--;
-            }
+        } else {
+            lb14.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel14MouseClicked
 
     private void painel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_painel15MouseClicked
-        if(numero == 15)
-        {
+        if (numero == 15) {
             temporizador.stop();
             btcomecar.setEnabled(true);
             JOptionPane.showMessageDialog(rootPane, "GANHOU");
-        }else
-            {
-                lb15.setText("X");
-                chances--;
-            }
+        } else {
+            lb15.setText("X");
+            chances--;
+        }
     }//GEN-LAST:event_painel15MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         chances = 5;
-        lbchances.setText("Chances: "+chances);
+        lbchances.setText("Chances: " + chances);
         btparar.setEnabled(false);
         btcomecar.setEnabled(true);
         temporizador.stop();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public void comecarJogo()
-    {
+    public void comecarJogo() {
         temporizador.start();
         btcomecar.setEnabled(false);
     }
-    
-    ActionListener acaoJoao = new ActionListener()
-    {
+
+    ActionListener acaoJoao = new ActionListener() {
         @Override
-        public void actionPerformed(ActionEvent e) 
-        {
-        if(chances <= 0)
-        {
-            temporizador.stop();
-            btparar.setEnabled(false);
-            btcomecar.setEnabled(true);
-            JOptionPane.showMessageDialog(rootPane, "Voce Perdeu");
-            
-        }else{
-        temporizador.setDelay(velocidade);
-        numero = (int) Math.ceil(Math.random()*15);
-        lbchances.setText("Chances: "+chances);
-        
-            painel1.setBackground(white);
-            painel2.setBackground(white);
-            painel3.setBackground(white);
-            painel4.setBackground(white);
-            painel5.setBackground(white);
-            painel6.setBackground(white);
-            painel7.setBackground(white);
-            painel8.setBackground(white);
-            painel9.setBackground(white);
-            painel10.setBackground(white);
-            painel11.setBackground(white);
-            painel12.setBackground(white);
-            painel13.setBackground(white);
-            painel14.setBackground(white);
-            painel15.setBackground(white);
-            
-            lb1.setText("");
-            lb2.setText("");
-            lb3.setText("");
-            lb4.setText("");
-            lb5.setText("");
-            lb6.setText("");
-            lb7.setText("");
-            lb8.setText("");
-            lb9.setText("");
-            lb10.setText("");
-            lb11.setText("");
-            lb12.setText("");
-            lb13.setText("");
-            lb14.setText("");
-            lb15.setText("");
-            
-            
-         switch(numero)
-         {
-             case 1:  painel1.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 2:  painel2.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 3:  painel3.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 4:  painel4.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 5:  painel5.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 6:  painel6.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 7:  painel7.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 8:  painel8.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 9:  painel9.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 10: painel10.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 11: painel11.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 12: painel12.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 13: painel13.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 14: painel14.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-             case 15: painel15.setBackground(retornaCor(cbcor.getSelectedIndex())); 
-                      break;
-                 
-         }
-         }
-        
+        public void actionPerformed(ActionEvent e) {
+            if (chances <= 0) {
+                temporizador.stop();
+                btparar.setEnabled(false);
+                btcomecar.setEnabled(true);
+                JOptionPane.showMessageDialog(rootPane, "Voce Perdeu");
+
+            } else {
+                temporizador.setDelay(velocidade);
+                numero = (int) Math.ceil(Math.random() * 15);
+                lbchances.setText("Chances: " + chances);
+
+                painel1.setBackground(white);
+                painel2.setBackground(white);
+                painel3.setBackground(white);
+                painel4.setBackground(white);
+                painel5.setBackground(white);
+                painel6.setBackground(white);
+                painel7.setBackground(white);
+                painel8.setBackground(white);
+                painel9.setBackground(white);
+                painel10.setBackground(white);
+                painel11.setBackground(white);
+                painel12.setBackground(white);
+                painel13.setBackground(white);
+                painel14.setBackground(white);
+                painel15.setBackground(white);
+
+                lb1.setText("");
+                lb2.setText("");
+                lb3.setText("");
+                lb4.setText("");
+                lb5.setText("");
+                lb6.setText("");
+                lb7.setText("");
+                lb8.setText("");
+                lb9.setText("");
+                lb10.setText("");
+                lb11.setText("");
+                lb12.setText("");
+                lb13.setText("");
+                lb14.setText("");
+                lb15.setText("");
+
+                switch (numero) {
+                    case 1:
+                        painel1.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(icone);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+
+                        break;
+                    case 2:
+                        painel2.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(icone);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 3:
+                        painel3.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(icone);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 4:
+                        painel4.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(icone);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 5:
+                        painel5.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(icone);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 6:
+                        painel6.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(icone);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 7:
+                        painel7.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(icone);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 8:
+                        painel8.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(icone);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 9:
+                        painel9.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(icone);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 10:
+                        painel10.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(icone);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 11:
+                        painel11.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(icone);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 12:
+                        painel12.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(icone);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 13:
+                        painel13.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(icone);
+                        lb14.setIcon(null);
+                        lb15.setIcon(null);
+                        break;
+                    case 14:
+                        painel14.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(icone);
+                        lb15.setIcon(null);
+                        break;
+                    case 15:
+                        painel15.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                        lb1.setIcon(null);
+                        lb2.setIcon(null);
+                        lb3.setIcon(null);
+                        lb4.setIcon(null);
+                        lb5.setIcon(null);
+                        lb6.setIcon(null);
+                        lb7.setIcon(null);
+                        lb8.setIcon(null);
+                        lb9.setIcon(null);
+                        lb10.setIcon(null);
+                        lb11.setIcon(null);
+                        lb12.setIcon(null);
+                        lb13.setIcon(null);
+                        lb14.setIcon(null);
+                        lb15.setIcon(icone);
+                        break;
+
+                }
+            }
+
         }
-        
-        public Color retornaCor(int posicao)
-        {
-            switch(posicao)
-            {
-                case 0: return Color.black;
-                case 1: return Color.blue;
-                case 2: return Color.green;
-                case 3: return Color.red;
+
+        public Color retornaCor(int posicao) {
+            switch (posicao) {
+                case 0:
+                    return Color.black;
+                case 1:
+                    return Color.blue;
+                case 2:
+                    return Color.green;
+                case 3:
+                    return Color.red;
             }
             return null;
         }
-        
+
     };
+
     /**
      * @param args the command line arguments
      */
