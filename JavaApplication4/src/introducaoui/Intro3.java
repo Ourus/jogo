@@ -843,7 +843,7 @@ public class Intro3 extends javax.swing.JFrame {
 
                 switch (numero) {
                     case 1:
-                        painel1.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                    //    painel1.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(icone);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -862,7 +862,7 @@ public class Intro3 extends javax.swing.JFrame {
 
                         break;
                     case 2:
-                        painel2.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                //        painel2.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(icone);
                         lb3.setIcon(null);
@@ -880,7 +880,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 3:
-                        painel3.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel3.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(icone);
@@ -898,7 +898,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 4:
-                        painel4.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel4.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -916,7 +916,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 5:
-                        painel5.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                 //      painel5.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -934,7 +934,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 6:
-                        painel6.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel6.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -952,7 +952,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 7:
-                        painel7.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel7.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -970,7 +970,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 8:
-                        painel8.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel8.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -988,7 +988,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 9:
-                        painel9.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel9.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -1006,7 +1006,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 10:
-                        painel10.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                   //     painel10.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -1024,7 +1024,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 11:
-                        painel11.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                  //      painel11.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -1042,7 +1042,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 12:
-                        painel12.setBackground(retornaCor(cbcor.getSelectedIndex()));
+                     //   painel12.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -1060,7 +1060,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 13:
-                        painel13.setBackground(retornaCor(cbcor.getSelectedIndex()));
+            //            painel13.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -1078,7 +1078,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 14:
-                        painel14.setBackground(retornaCor(cbcor.getSelectedIndex()));
+           //             painel14.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
@@ -1096,7 +1096,7 @@ public class Intro3 extends javax.swing.JFrame {
                         lb15.setIcon(null);
                         break;
                     case 15:
-                        painel15.setBackground(retornaCor(cbcor.getSelectedIndex()));
+            //            painel15.setBackground(retornaCor(cbcor.getSelectedIndex()));
                         lb1.setIcon(null);
                         lb2.setIcon(null);
                         lb3.setIcon(null);
